@@ -2,24 +2,27 @@
 1. Open your terminal or command prompt (on Windows, use Command Prompt, PowerShell, or WSL if enabled).
 2. Navigate to a directory where you want to store the project (e.g., `cd ~/projects`).
 3. Clone the repository: 
- git clone https://github.com/Enc3yptedDegenExt/financial_tracker.git
+ ```git clone https://github.com/Enc3yptedDegenExt/financial_tracker.git ```
 
- 4. Change into the project directory: cd financial_tracker
+ 4. Change into the project directory: 
+  ```cd financial_tracker```
 
 ### Step 2: Set Up a Virtual Environment
 Virtual environments isolate dependencies, which is best practice for Python projects.
 
-1. In the terminal (from the project root): python -m venv .venv
-- This creates a virtual environment named `.venv` in the project folder.
+1. In the terminal (from the project root):
+ ``` python -m venv .venv ```
+ - This creates a virtual environment named `.venv` in the project folder.
 
 2. Activate the virtual environment:
-- **Windows (Command Prompt)**: `.venv\Scripts\activate`
+- **Windows (Command Prompt)**: ``` .venv\Scripts\activate ```
 - **Windows (WSL or Linux)**: `source .venv/bin/activate`
 - **macOS**: `source .venv/bin/activate`
 - Your terminal prompt should change to indicate the virtual environment is active (e.g., `(.venv)`).
+
 3. Install dependencies:
-pip install flask
-- If there's a `requirements.txt` file (e.g., containing `flask`), run `pip install -r requirements.txt` instead.
+    ``` pip install flask```
+
 
 ### Step 3: Install and Set Up VS Code
 1. Download and install VS Code from the official website: [code.visualstudio.com](https://code.visualstudio.com/).
@@ -42,7 +45,9 @@ pip install flask
 - Ensure the virtual environment is activated (run the activation command if needed).
 
 2. Run the application:
-python app.py
+     ```python app.py```
 
 3. Access the App:
 - Open a web browser and go to `http://localhost:5000`
+
+
