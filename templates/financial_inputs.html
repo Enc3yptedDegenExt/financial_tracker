@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter Your Financial Details</title>
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Enter Your Financial Details</h1>
+    <form action="/generate-report" method="POST">
+        <input name="income" type="number" placeholder="Monthly Income" required>
+
+        <h3>Expenses</h3>
+        <input name="housing" type="number" placeholder="Housing / Rent">
+        <input name="food" type="number" placeholder="Food">
+        <input name="shopping" type="number" placeholder="Shopping">
+        <input name="groceries" type="number" placeholder="Groceries">
+        <input name="transport" type="number" placeholder="Transport">
+        <input name="entertainment" type="number" placeholder="Entertainment">
+        <input name="medical" type="number" placeholder="Medical / Health">
+
+        <details>
+            <summary>Loan Expenses</summary>
+            <input name="home_loan" type="number" placeholder="Home Loan">
+            <input name="house_loan" type="number" placeholder="House Loan">
+            <input name="car_loan" type="number" placeholder="Car Loan">
+        </details>
+
+        <h3>Investments</h3>
+        <input name="sip" type="number" placeholder="SIP per month">
+        <input name="stocks" type="number" placeholder="Direct Stock Investment">
+
+        <input type="hidden" name="tier" value="{{ user.tier }}">
+        <button type="submit">Generate Report</button>
+        <button onclick="window.history.back()">Back</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Financial Health Tracker</title>
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Smart Financial Health Tracker - Personalized for Indian Cities</h1>
+    <form action="/financial-input" method="POST">
+        <input name="name" placeholder="Name" required>
+        <input name="age" type="number" placeholder="Age" required>
+        <input name="email" placeholder="Email (optional)">
+        <select name="tier" required>
+            <option value="Tier 1">Tier 1</option>
+            <option value="Tier 2">Tier 2</option>
+            <option value="Tier 3">Tier 3</option>
+        </select>
+        <button type="submit">Next</button>
+    </form>
+</body>
+</html>
